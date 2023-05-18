@@ -121,7 +121,6 @@ function touchstart(e) {
   touch = true;
   sm = { x: x, y: y };
   sr = { x: r.x, y: r.y };
-  document.body.style.overflow = 'hidden';
 }
 function touchmove(e) {
   if (touch) {
@@ -136,7 +135,6 @@ function touchmove(e) {
 }
 function touchend() {
   touch = false;
-  document.body.style.overflow = 'visible';
 }
 
 function example(i) {
